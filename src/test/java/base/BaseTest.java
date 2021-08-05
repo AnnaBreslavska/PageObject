@@ -28,6 +28,7 @@ public class BaseTest {
 
     @AfterMethod
     public void driverQuit() {
+        getDriver().manage().deleteAllCookies();
         getDriver().quit();
     }
 
