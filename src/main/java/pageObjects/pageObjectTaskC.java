@@ -22,7 +22,6 @@ public class pageObjectTaskC extends BasePage {
 
 
     public void addTShirtToCard() {
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         clickOnWebElement(tShirtPink);
         scroll();
         clickOnWebElement(selectColor);
