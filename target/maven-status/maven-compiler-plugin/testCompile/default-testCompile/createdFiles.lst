@@ -1,3 +1,5 @@
-HW20.class
-base\baseTest.class
+base\BaseTest.class
+PackageSuiteTest\Task2.class
 HW19.class
+HW20.class
+PackageSuiteTest\Task1.class

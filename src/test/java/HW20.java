@@ -1,4 +1,4 @@
-import base.baseTest;
+import base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageFactory.pageFactoryTaskA;
@@ -6,7 +6,7 @@ import pageFactory.pageFactoryTaskBAddItemToCart;
 import pageFactory.pageFactoryTaskBCart;
 import pageFactory.pageFactoryTaskBSearch;
 
-public class HW20 extends baseTest {
+public class HW20 extends BaseTest {
 
     @Test
     public void taskA() {

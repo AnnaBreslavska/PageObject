@@ -1,11 +1,11 @@
-import base.baseTest;
+import base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.PageObjectTaskB;
 import pageObjects.PageObjectTaskC;
 
 
-public class HW19 extends baseTest {
+public class HW19 extends BaseTest {
 
     @Test
     public void taskB() {
