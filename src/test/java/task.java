@@ -1,12 +1,11 @@
-import base.BaseTest;
+import base.baseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.pageObjectTaskB;
 import pageObjects.pageObjectTaskC;
 
 
-public class task extends BaseTest {
-
+public class task extends baseTest {
 
     @Test
     public void taskB() {
@@ -15,8 +14,8 @@ public class task extends BaseTest {
         pageObjectTaskB.addToWishlist();
         getDriver().get("http://shop.demoqa.com/wishlist/");
         Assert.assertTrue(pageObjectTaskB.itemIsAddedToWishlist());
-
     }
+
     @Test
     public void taskC() {
         pageObjectTaskC pageObjectTaskC = new pageObjectTaskC(getDriver());

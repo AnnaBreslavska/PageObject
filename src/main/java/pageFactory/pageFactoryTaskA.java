@@ -34,6 +34,9 @@ public class pageFactoryTaskA {
     @FindBy(xpath = "//input[@id='submit']")
     WebElement postCommentButton;
 
+    @FindBy(xpath = "//div[@class='wp-die-message']")
+    WebElement errorMessage;
+
     public void openLinkForComment(){
         readMoreButton.click();
     }
@@ -66,11 +69,14 @@ public class pageFactoryTaskA {
     public void leaveComment(String name, String email, String website, String comment) {
         openLinkForComment();
         setNameField(name);
-        setNameField(email);
+        setEmailField(email);
         setWebsiteField(website);
         setCommentField(comment);
         saveCheckboxAsTrue();
         clickPostComment();
     }
 
+    public String errorMessageContains (){
+        return errorMessage.getText();
+    }
 }
