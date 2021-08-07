@@ -6,7 +6,7 @@ import pageFactory.pageFactoryTaskBAddItemToCart;
 import pageFactory.pageFactoryTaskBCart;
 import pageFactory.pageFactoryTaskBSearch;
 
-public class hw20 extends baseTest {
+public class HW20 extends baseTest {
 
     @Test
     public void taskA() {

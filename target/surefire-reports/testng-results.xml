@@ -1,11 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="base.BaseTest" duration-ms="8" started-at="2021-08-03T21:11:54 EEST" finished-at="2021-08-03T21:11:54 EEST">
+  <suite name="SuiteByClass" duration-ms="45495" started-at="2021-08-07T14:54:08 EEST" finished-at="2021-08-07T14:54:53 EEST">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="8" started-at="2021-08-03T21:11:54 EEST" finished-at="2021-08-03T21:11:54 EEST">
-    </test> <!-- Command line test -->
-  </suite> <!-- base.BaseTest -->
+    <test name="Test1" duration-ms="45495" started-at="2021-08-07T14:54:08 EEST" finished-at="2021-08-07T14:54:53 EEST">
+      <class name="HW19">
+        <test-method status="PASS" signature="driverSetup()[pri:0, instance:HW19@34cd072c]" name="driverSetup" is-config="true" duration-ms="2850" started-at="2021-08-07T14:54:08 EEST" finished-at="2021-08-07T14:54:11 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method status="PASS" signature="taskB()[pri:0, instance:HW19@34cd072c]" name="taskB" duration-ms="7064" started-at="2021-08-07T14:54:11 EEST" finished-at="2021-08-07T14:54:18 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- taskB -->
+        <test-method status="PASS" signature="driverQuit()[pri:0, instance:HW19@34cd072c]" name="driverQuit" is-config="true" duration-ms="802" started-at="2021-08-07T14:54:18 EEST" finished-at="2021-08-07T14:54:19 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method status="PASS" signature="driverSetup()[pri:0, instance:HW19@34cd072c]" name="driverSetup" is-config="true" duration-ms="1409" started-at="2021-08-07T14:54:19 EEST" finished-at="2021-08-07T14:54:20 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method status="PASS" signature="taskC()[pri:0, instance:HW19@34cd072c]" name="taskC" duration-ms="10458" started-at="2021-08-07T14:54:20 EEST" finished-at="2021-08-07T14:54:31 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- taskC -->
+        <test-method status="PASS" signature="driverQuit()[pri:0, instance:HW19@34cd072c]" name="driverQuit" is-config="true" duration-ms="999" started-at="2021-08-07T14:54:31 EEST" finished-at="2021-08-07T14:54:32 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+      </class> <!-- HW19 -->
+      <class name="HW20">
+        <test-method status="PASS" signature="driverSetup()[pri:0, instance:HW20@fad74ee]" name="driverSetup" is-config="true" duration-ms="1718" started-at="2021-08-07T14:54:32 EEST" finished-at="2021-08-07T14:54:33 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method status="PASS" signature="taskA()[pri:0, instance:HW20@fad74ee]" name="taskA" duration-ms="5211" started-at="2021-08-07T14:54:33 EEST" finished-at="2021-08-07T14:54:38 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- taskA -->
+        <test-method status="PASS" signature="driverQuit()[pri:0, instance:HW20@fad74ee]" name="driverQuit" is-config="true" duration-ms="875" started-at="2021-08-07T14:54:38 EEST" finished-at="2021-08-07T14:54:39 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method status="PASS" signature="driverSetup()[pri:0, instance:HW20@fad74ee]" name="driverSetup" is-config="true" duration-ms="2050" started-at="2021-08-07T14:54:39 EEST" finished-at="2021-08-07T14:54:41 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method status="PASS" signature="taskB()[pri:0, instance:HW20@fad74ee]" name="taskB" duration-ms="11230" started-at="2021-08-07T14:54:41 EEST" finished-at="2021-08-07T14:54:53 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- taskB -->
+        <test-method status="PASS" signature="driverQuit()[pri:0, instance:HW20@fad74ee]" name="driverQuit" is-config="true" duration-ms="767" started-at="2021-08-07T14:54:53 EEST" finished-at="2021-08-07T14:54:53 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+      </class> <!-- HW20 -->
+    </test> <!-- Test1 -->
+  </suite> <!-- SuiteByClass -->
 </testng-results>

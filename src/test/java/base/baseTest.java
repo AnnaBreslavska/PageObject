@@ -13,7 +13,7 @@ public class baseTest {
 
     private WebDriver driver;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void driverSetup() {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
@@ -29,7 +29,7 @@ public class baseTest {
         this.driver = driver;
     }
 
-    @AfterMethod
+    @AfterMethod (alwaysRun = true)
     public void driverQuit() {
         getDriver().manage().deleteAllCookies();
         getDriver().quit();

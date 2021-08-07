@@ -1,15 +1,15 @@
 import base.baseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pageObjects.pageObjectTaskB;
-import pageObjects.pageObjectTaskC;
+import pageObjects.PageObjectTaskB;
+import pageObjects.PageObjectTaskC;
 
 
-public class task extends baseTest {
+public class HW19 extends baseTest {
 
     @Test
     public void taskB() {
-        pageObjectTaskB pageObjectTaskB = new pageObjectTaskB(getDriver());
+        PageObjectTaskB pageObjectTaskB = new PageObjectTaskB(getDriver());
         getDriver().get("http://shop.demoqa.com/");
         pageObjectTaskB.addToWishlist();
         getDriver().get("http://shop.demoqa.com/wishlist/");
@@ -18,7 +18,7 @@ public class task extends baseTest {
 
     @Test
     public void taskC() {
-        pageObjectTaskC pageObjectTaskC = new pageObjectTaskC(getDriver());
+        PageObjectTaskC pageObjectTaskC = new PageObjectTaskC(getDriver());
         getDriver().get("http://shop.demoqa.com/");
         pageObjectTaskC.addTShirtToCard();
         getDriver().get("http://shop.demoqa.com/cart/");

@@ -5,9 +5,9 @@ import org.openqa.selenium.WebDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class pageObjectTaskC extends BasePage {
+public class PageObjectTaskC extends BasePage {
 
-    public pageObjectTaskC(WebDriver driver) {
+    public PageObjectTaskC(WebDriver driver) {
         super(driver);
     }
 
