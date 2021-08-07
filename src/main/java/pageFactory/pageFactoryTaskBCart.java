@@ -1,5 +1,6 @@
 package pageFactory;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,9 +23,14 @@ public class pageFactoryTaskBCart {
     @FindBy (xpath = "//p[normalize-space()='37']")
     WebElement verifyProductSize;
 
+    public void scroll() {
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+        jse.executeScript("window.scrollBy(0,300)");
+    }
 
     public boolean checkItemIsAdded() {
         goToCart.click();
+        scroll();
         return verifyProductNameAndColor.isDisplayed();
 
     }

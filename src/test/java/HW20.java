@@ -12,7 +12,9 @@ public class HW20 extends baseTest {
     public void taskA() {
         getDriver().get("http://shop.demoqa.com/author/lsharm/");
         pageFactoryTaskA pageFactoryTaskA = new pageFactoryTaskA(getDriver());
+        allureLog("Check Leaving comment");
         pageFactoryTaskA.leaveComment("Anna", "test@gmail.com", "Testwebsite.com", "Love your new Bag collection!!");
+        allureLog("Check correct Error message is displayed");
         Assert.assertEquals(pageFactoryTaskA.errorMessageContains(), "Error: You entered an incorrect CAPTCHA answer. Please go back and try again.");
     }
 
@@ -22,8 +24,11 @@ public class HW20 extends baseTest {
         pageFactoryTaskBSearch search = new pageFactoryTaskBSearch(getDriver());
         pageFactoryTaskBAddItemToCart addItemToCart = new pageFactoryTaskBAddItemToCart(getDriver());
         pageFactoryTaskBCart cart = new pageFactoryTaskBCart(getDriver());
+        allureLog("Check Performing Search");
         search.performSearch("blue");
+        allureLog("Check Adding Item to Cart");
         addItemToCart.addItemToCart();
+        allureLog("Check correct Item was added");
         Assert.assertTrue(cart.checkItemIsAdded());
     }
 }
