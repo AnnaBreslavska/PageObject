@@ -1,5 +1,7 @@
 base\BaseTest.class
 PackageSuiteTest\Task2.class
-HW19.class
+base\BaseTestWithThreadLocal.class
 HW20.class
 PackageSuiteTest\Task1.class
+HW19.class
+HW23.class

@@ -1,11 +1,11 @@
-import base.BaseTest;
+import base.BaseTestWithThreadLocal;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.PageObjectTaskB;
 import pageObjects.PageObjectTaskC;
 
 
-public class HW19 extends BaseTest {
+public class HW19 extends BaseTestWithThreadLocal {
 
     @Test
     public void taskB() {
