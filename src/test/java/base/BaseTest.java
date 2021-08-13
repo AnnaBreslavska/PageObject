@@ -30,6 +30,7 @@ public class BaseTest {
     public void driverSetup() {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         setDriver(driver);
     }
