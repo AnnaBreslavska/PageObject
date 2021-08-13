@@ -15,6 +15,5 @@ public class HW24 extends BaseTest {
         messagePage.workWithMessages();
         messagePage.messageSending("Please, Help! I cannot login!");
         Assert.assertTrue(messagePage.alertIsdsplayed());
-        //System.out.println("need to commit smth);
     }
 }
